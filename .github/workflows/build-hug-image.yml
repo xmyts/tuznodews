@@ -47,7 +47,6 @@ jobs:
           context: .
           push: true
           tags: |
-          # 修改镜像名称
             ghcr.io/${{ steps.vars.outputs.owner_lower }}/tuzhgs:latest
           labels: |
             org.opencontainers.image.source=https://github.com/${{ steps.vars.outputs.repo_lower }}
